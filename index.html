@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Cifra de César</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src='cripto.js'></script>
+</head>
+<body>
+  <label>Chave:</label>
+  <input onkeyup="encrypt()" type="number" id="chave" style="display: block; width: 5em;">
+
+  <label>Frase:</label>
+  <textarea onkeyup="encrypt()" id="frase" cols="80" rows="5" style="display: block;"></textarea>
+
+  <label>Resultado:</label>
+  <textarea id="resultado" cols="80" rows="5" style="display: block;"></textarea>
+
+  <style>
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type="number"] {
+      -moz-appearance: textfield;
+    } 
+  </style>
+</body>
+</html>
